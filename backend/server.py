@@ -202,6 +202,23 @@ def server_admin_userpermission_change():
     # Return empty
     return dumps({})
 
+
+# Server function to handle /auth/passwordreset/reset request
+@APP.route('/search', methods = ['POST'])
+def server_auth_passwordreset_reset():
+
+    # Get input from frontend
+    search = request.form.get('search_parameters')
+    cole = coles_search(search)
+    wools = woolworths_search(search)
+
+    data = {}
+    data[coles] = cole
+    data[woolworths] = wools
+
+    # Return empty
+    return dumps(data)
+
 # Serve the static images
 @APP.route('/static/<path:path>')
 def send_file(filename):
