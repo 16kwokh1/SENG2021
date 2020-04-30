@@ -1,0 +1,63 @@
+#appName {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    height: 250px;
+}
+
+#roundSquare {
+    background-color: #abc6dc;
+    border-radius: 150px;
+    padding-bottom: 5px;
+}
+
+#description {
+    text-align:center; 
+    font-size: 20px;
+    color: #314f6f;
+}
+
+.search__container {
+        padding-top: 20px;
+    }
+
+.search__input {
+        width: 100%;
+        padding: 12px;
+        padding-right: 10px;
+
+        background-color: transparent;
+        transition: transform 250ms ease-in-out;
+        font-size: 25px;
+        line-height: 18px;
+        
+        color: #abc6dc;
+        background-color: transparent;
+
+        background-image: url('https://api.iconify.design/entypo-magnifying-glass.svg?color=%23abc6dc');
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: 95% center;
+        border-radius: 50px;
+        border: 1px solid #abc6dc;
+        transition: all 250ms ease-in-out;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+    }
+
+.search__input::placeholder {
+            color: #abc6dc;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+.search__input:hover,
+        .search__input:focus {
+            padding: 12px 0;
+            outline: 0;
+            border: 1px solid transparent;
+            border-bottom: 1px solid #abc6dc;
+            border-radius: 0;
+            background-position: 100% center;
+        }

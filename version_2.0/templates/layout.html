@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/layout.css') }}">
+
+
+    {% block head %}{% endblock %}
+
+    {% if title %}
+        <title>{{title}} | priceGauge</title>
+    {% else %}
+        <title>priceGauge</title>
+    {% endif %}
+
+</head>
+<body>
+
+  <div class="topnav">
+    {% block active %}{% endblock %}
+  </div>
+    
+    {% block content %}{% endblock %}
+
+</body>
+
+</html>

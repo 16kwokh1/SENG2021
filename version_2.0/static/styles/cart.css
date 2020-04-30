@@ -1,0 +1,60 @@
+
+.grid-container, .brands{
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 30px;
+}
+
+.inside-grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 30px;
+    color: #314f6f;
+}
+
+.product-image{
+    float: center;
+}
+
+.product{
+    border-radius: 25px;
+    text-align: center;
+
+}
+
+
+.font{
+    font-family: Helvetica;
+    color: #314f6f;
+}
+
+.price-size{
+    font-size: 35px;
+}
+
+.left-side, .coles{
+    background-color: lightpink;
+}
+.right-side, .woolies{
+    background-color: lightgreen;
+}
+
+.empty{
+    background-color: #314f6f;
+}
+
+
+
+
+
+.sign{
+    border-radius: 30px;
+}
+
+button{
+    border-radius: 30px;
+    font-size: 20px;
+    background-color: #314f6f;
+    color: #abc6dc;
+}
